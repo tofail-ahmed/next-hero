@@ -22,19 +22,23 @@ const navlinks = [
     title: "DashBoard",
   },
 ];
-const navBar = () => {
+const NavBar = () => {
   return (
-    <nav className="flex items center justify-between conatiner mx-auto">
-      <h1 className="text-4xl font-semibold">Next Hero</h1>
-      <ul className="felx justify-center items center">
-        {navlinks.map(({ path, title }) => (
-          <li className="mx-2" key={path}>
-            <Link href={path}>{title}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
+   
+<nav style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background-color: #f0f0f0;">
+  <h1 style="font-size: 2rem; font-weight: bold;">Next Hero</h1>
+  <ul style="display: flex; list-style: none; padding: 0; margin: 0;">
+  
+    {navlinks.map(({ path, title }) => (
+      <li className="mx-2" key={path}>
+        <Link href={path}>{title}</Link>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+
   );
 };
 
-export default navBar;
+export default NavBar;
