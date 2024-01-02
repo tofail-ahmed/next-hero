@@ -13,6 +13,7 @@ const DashBoardPage = () => {
         <a href="/dashboard/manageProduct">Manage Product</a>
       </button>
      </div> */}
+     <h1>This is DashBoard</h1>
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import NavBar from "@/component/navBar";
+import NavBar from "@/component/NavBar";
+
 
 const WithLayOutPage = ({ children }) => {
   return (
