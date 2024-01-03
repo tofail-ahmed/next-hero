@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import image1 from '../../assets/kitten.jpg'
 export default function Home() {
   return (
     <main>
@@ -8,6 +8,7 @@ export default function Home() {
           Hello Bangladesh
         </span>
       </h1>
+        <Image width={600} height={400} src={image1} alt=''/>
     </main>
   );
 }
