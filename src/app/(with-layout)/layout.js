@@ -3,7 +3,7 @@ import NavBar from "@/component/NavBar";
 
 const WithLayOutPage = ({ children }) => {
   return (
-    <div>
+    <div className="container mx-auto">
       <NavBar></NavBar>
       <div className="flex justify-center text-2xl my-2 text-red-200 bg-red-900 py-4">
         <h1>my</h1>
